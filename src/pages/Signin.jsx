@@ -62,7 +62,7 @@ export const Signin = ()=>{
                         .then((res)=> {
                             console.log(res);
                             localStorage.setItem('token' ,res.data.token);
-                            navigate('/dashboard');
+                            navigate('/');
                         } )
                         .catch((err)=> alert(JSON.stringify(err.response.data))) 
                 } 
