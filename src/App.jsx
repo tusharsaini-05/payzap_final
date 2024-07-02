@@ -15,17 +15,13 @@ function App() {
     <div className="h-screen bg-gradient-to-r from-teal-400 to-yellow-200">
 
     
-    <RecoilRoot>
-      <BrowserRouter>
+
         <Routes>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/signin" element={<Signin/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/send" element={<SendMoney/>}/>
         </Routes>
-      </BrowserRouter>
-      
-    </RecoilRoot>
     </div>
     </>
   )
