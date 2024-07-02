@@ -6,15 +6,17 @@ import { Dashboard } from "./pages/Dashboard"
 import { SendMoney } from "./pages/SendMoney"
 import { RecoilRoot } from "recoil"
 
+
 function App() {
   
+  const navigate= useNavigate();
   
 
   return (
     <>
     <div className="h-screen bg-gradient-to-r from-teal-400 to-yellow-200">
 
-    
+        <button onClick={()=> navigate('/signup')}>CLick me</button>
 
         <Routes>
           <Route path="/signup" element={<Signup/>}/>
